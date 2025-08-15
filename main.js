@@ -31,6 +31,9 @@ function howManyDays(timerId) {
       }
       // clearInterval(timerId);
     }  else {
+    if(nextBirthday < now){
+      nextBirthday.setFullYear(now.getFullYear() + 1);
+    }
     remaining = nextBirthday - now;
     let mt = Math.floor(remaining/(1000*60*60*24*7*4));
     mt = mt>0 ? ` ${mt} meses` : "";
