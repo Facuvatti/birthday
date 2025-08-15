@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cumpleaños</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Ingrese su fecha de nacimiento</h1>
+  <form onsubmit="handleSubmit(event)">
+    <input type="text" name="year" placeholder="AÑO">
+    <input type="text" name="month" placeholder="MES">
+    <input type="text" name="day" placeholder="DIA">
+    <!-- <input type="text" name="time" placeholder="HORA hh:mm:ss"> -->
+    <input type="submit" value="Enviar">
+  </form>
+  <h2 id="remaining"></h2>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+<script src="main.js"></script>
+</html>
